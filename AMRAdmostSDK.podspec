@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AMRAdmostSDK'
-  s.version          = '1.0.13'
+  s.version          = '1.0.14'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 									Copyright 2016
 									Admost Mediation Limited. 
@@ -21,8 +21,7 @@ Admost Adserver is a powerful ad serving tool to maximize your ad revenues for y
   s.public_header_files = 'AMRAdmostSDK/AMRAdmostSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'AMRAdmostSDK/AMRAdmostSDK.framework'
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -lc++' }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
   s.dependency 'KokteylLog', '~> 1.0.8'
   s.dependency 'AMRSDK', '~> 1.5.0'
 end
