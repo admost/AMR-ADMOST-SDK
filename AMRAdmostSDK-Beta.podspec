@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'AMRAdmostSDK'
+  s.name             = 'AMRAdmostSDK-Beta'
   s.version          = '1.0.15'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 									Copyright 2016
@@ -26,5 +26,5 @@ Admost Adserver is a powerful ad serving tool to maximize your ad revenues for y
   }
 
   s.dependency 'KokteylLog', '~> 1.1.1'
-  s.dependency 'AMRSDK', '~> 1.5.4'
+  s.dependency 'AMRSDK-Beta', '~> 1.5.6'
 end
